@@ -33,7 +33,6 @@ span img {
 }
 
 body {
-    /* background-color: var(--blue); */
     color: var(--white);
     background-image: url("../Photos/code back.jpg");
     background-repeat: repeat;
@@ -42,7 +41,6 @@ body {
     width: 100%;
     height: unset;
     font-weight: 700;
-    /* font-family: Helvetica; */
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -71,8 +69,7 @@ nav.headNav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* border: #ffffff solid 2px;
-    border-radius: 15px; */
+    border-radius: 15px;
     width: 100%;
 }
 
@@ -92,8 +89,6 @@ nav.footNav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* border: #ffffff solid 2px;
-    border-radius: 15px; */
     width: 100%;
 }
 
@@ -108,7 +103,6 @@ nav.footNav ul li {
 }
 
 div#profileImg img {
-    /* padding: 10px; */
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -120,7 +114,6 @@ div#profileImg {
     padding: 10px;
     margin: 10px;
     display: flex;
-    /* justify-content: center; */
 }
 
 div#schoolSolo img {
@@ -187,7 +180,6 @@ div img {
 
 
 div.About img {
-    /* width: 30px; */
     border-radius: 10%;
     margin: 10px 5px;
     transition: all .2s ease-in-out;
@@ -203,13 +195,9 @@ div.galleryBody div {
     width: 100%;
     padding: 25px;
     margin: 25px;
-
-    /* background-color: #1e90ff; */
 }
 
 div.galleryBody img {
-    /* width: 30px; */
-
     border-radius: 10%;
     margin: 10px 5px;
     transition: all .2s ease-in-out;
@@ -219,22 +207,6 @@ div.galleryBody img {
     transform: scale(1.4);
     animation: rotate 3s linear;
 }
-
-
-
-
-/* div {
-    content: '';
-    font-size: 2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-h2:hover{
-    animation: rotate 1s linear;
-} */
 
 .h {
     font-family: 'Courgette', cursive;
@@ -297,8 +269,6 @@ h2:hover{
     font-size: 100px;
     color: var(--red);
     transition: all 500ms;
-    /* font-size-adjust: 500px; */
-
 }
 
 a {
@@ -335,5 +305,4 @@ a:hover {
     font-size: 20px;
     color: var(--white);
     transition: all 500ms;
-    /* color: red; */
 }

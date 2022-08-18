@@ -1,13 +1,4 @@
 <style>
-    *,
-    *:before,
-    *:after {
-        box-sizing: border-box;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-
     body,
     button,
     input {
@@ -23,13 +14,14 @@
 
     .container {
         flex: 0 1 700px;
-        margin: auto;
+        /* margin: auto; */
         padding: 10px;
+        margin-left: 400px;
     }
 
     .screen {
         position: relative;
-        background: #3e3e3e;
+        background: rgba(19, 185, 207, 0.5);
         border-radius: 15px;
     }
 
@@ -46,51 +38,6 @@
         z-index: -1;
     }
 
-    .screen-header {
-        display: flex;
-        align-items: center;
-        padding: 10px 20px;
-        background: #4d4d4f;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-    .screen-header-left {
-        margin-right: auto;
-    }
-
-    .screen-header-button {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        margin-right: 3px;
-        border-radius: 8px;
-        background: white;
-    }
-
-    .screen-header-button.close {
-        background: #ed1c6f;
-    }
-
-    .screen-header-button.maximize {
-        background: #e8e925;
-    }
-
-    .screen-header-button.minimize {
-        background: #74c54f;
-    }
-
-    .screen-header-right {
-        display: flex;
-    }
-
-    .screen-header-ellipsis {
-        width: 3px;
-        height: 3px;
-        margin-left: 2px;
-        border-radius: 8px;
-        background: #999;
-    }
 
     .screen-body {
         display: flex;
@@ -106,24 +53,6 @@
         flex-direction: column;
     }
 
-    .app-title {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        color: #ea1d6f;
-        font-size: 26px;
-    }
-
-    .app-title:after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        width: 25px;
-        height: 4px;
-        background: #ea1d6f;
-    }
 
     .app-contact {
         margin-top: auto;
@@ -169,13 +98,16 @@
         background: none;
         border: none;
         color: #ea1d6f;
-        font-size: 14px;
+        font-size: 18px;
         cursor: pointer;
-        outline: none;
+        border: 1px #fff solid;
+        border-radius: 10%;
+
     }
 
     .app-form-button:hover {
         color: #b9134f;
+        background-color: #fff;
     }
 
 
@@ -208,8 +140,8 @@
                                 <input id="message" class="app-form-control" placeholder="MESSAGE" value="Your message">
                             </div>
                             <div class="app-form-group buttons">
-                                <button class="app-form-button">CANCEL</button>
-                                <button class="app-form-button">SEND</button>
+                                <button id="cancelBtn" class="app-form-button">CANCEL</button>
+                                <button id="sendBtn" class="app-form-button">SEND</button>
                             </div>
                         </div>
                     </div>
