@@ -10,6 +10,10 @@ h1 {
     font-stretch: ultra-expanded;
 }
 
+h1:hover {
+    color: cyan;
+}
+
 
 
 h4 {
@@ -54,6 +58,13 @@ nav a {
     font-size: 20px;
 }
 
+footer {
+    display: flex;
+    flex-direction: grid;
+    border-top: 1px solid #fff;
+    justify-content: space-between;
+}
+
 nav.headNav {
     margin: 0px;
     padding: 10px;
@@ -66,6 +77,27 @@ nav.headNav {
 }
 
 nav.headNav ul {
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-transform: right;
+    align-items: center;
+}
+
+nav.footNav {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: #ffffff solid 2px;
+    border-radius: 15px; */
+    width: 100%;
+}
+
+nav.footNav ul li {
     padding: 10px;
     margin: 10px;
     list-style-type: none;
@@ -268,6 +300,18 @@ h2:hover{
     /* font-size-adjust: 500px; */
 
 }
+
+a {
+    font-family: 'Courgette', cursive;
+    font-size: 75px;
+    color: white;
+}
+
+a:hover {
+    color: cyan;
+}
+
+
 
 .hide {
     display: none;
