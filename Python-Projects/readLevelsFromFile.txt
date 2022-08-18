@@ -1,0 +1,16 @@
+    # Method: Load levelsList using the data in levelsFile 
+    def readLevelsFromFile(self):
+        try:
+            # Set levelsList to an empty list 
+            pass
+            # Open the file
+            pass
+            # Use a loop to read through the file line by line
+            pass
+                # This code is inside the loop:
+                # Convert the line to a float and then append it to levelsList
+                pass
+            # Close the file
+            pass
+        except:
+            return

@@ -1,0 +1,295 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --red: #ba181b;
+    --roundImg: 350px;
+}
+
+h1 {
+    font-size: 100px;
+    font-stretch: ultra-expanded;
+}
+
+
+
+h4 {
+    font-size: 50px;
+    padding: 10px;
+    margin: 50px;
+}
+
+span h2 {
+    font-size: 40px;
+
+}
+
+span img {
+    width: 300px;
+    margin: 30px;
+}
+
+body {
+    /* background-color: var(--blue); */
+    color: var(--white);
+    background-image: url("../Photos/code back.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    background-blend-mode: color-burn;
+    width: 100%;
+    height: unset;
+    font-weight: 700;
+    /* font-family: Helvetica; */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+div p {
+    font-size: 18px;
+}
+
+nav a {
+    color: var(--white);
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+nav.headNav {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: #ffffff solid 2px;
+    border-radius: 15px; */
+    width: 100%;
+}
+
+nav.headNav ul {
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-transform: right;
+    align-items: center;
+}
+
+div#profileImg img {
+    /* padding: 10px; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border: #ffffff solid 2px;
+    border-radius: 75%;
+}
+
+div#profileImg {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+div#schoolSolo img {
+    border: #ffffff solid 2px;
+    border-radius: 100%;
+
+}
+
+div img#schoolImg {
+    border: #ffffff solid 2px;
+    border-radius: 100%;
+}
+
+div img#giraff {
+    border: #ffffff solid 2px;
+    border-radius: 100%;
+}
+
+div img#ranch {
+    border: #ffffff solid 2px;
+    border-radius: 100%;
+}
+
+div img#trafficOfficer {
+    border: #ffffff solid 2px;
+    border-radius: 100%;
+}
+
+img#trafficCar {
+    border: #ffffff solid 2px;
+    border-radius: 100%;
+}
+
+
+
+div#profileImg h4 {
+    margin: 10px;
+}
+
+div.alignRight {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+
+}
+
+div.alignLeft {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
+
+div.alignCenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+div img {
+    height: var(--roundImg);
+    width: var(--roundImg);
+
+}
+
+
+div.About img {
+    /* width: 30px; */
+    border-radius: 10%;
+    margin: 10px 5px;
+    transition: all .2s ease-in-out;
+}
+
+.About img:hover {
+    transform: scale(1.2)
+}
+
+
+div.galleryBody div {
+    height: 400px;
+    width: 100%;
+    padding: 25px;
+    margin: 25px;
+
+    /* background-color: #1e90ff; */
+}
+
+div.galleryBody img {
+    /* width: 30px; */
+
+    border-radius: 10%;
+    margin: 10px 5px;
+    transition: all .2s ease-in-out;
+}
+
+.galleryBody img:hover {
+    transform: scale(1.4);
+    animation: rotate 3s linear;
+}
+
+
+
+
+/* div {
+    content: '';
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2:hover{
+    animation: rotate 1s linear;
+} */
+
+.h {
+    font-family: 'Courgette', cursive;
+    font-size: 75px;
+    color: white;
+}
+
+.e {
+    font-family: 'Courgette', cursive;
+    font-size: 75px;
+    color: white;
+}
+
+.l {
+    font-family: 'Courgette', cursive;
+    font-size: 75px;
+    color: white;
+}
+
+.l2 {
+    font-family: 'Courgette', cursive;
+    font-size: 75px;
+    color: white;
+}
+
+.o {
+    font-family: 'Courgette', cursive;
+    font-size: 75px;
+    color: white;
+}
+
+.there {
+    font-family: 'Courgette', cursive;
+    font-size: 75px;
+    color: white;
+}
+
+
+.h:hover {
+    color: chartreuse;
+}
+
+.e:hover {
+    color: purple;
+}
+
+.l:hover {
+    color: cyan;
+}
+
+.l2:hover {
+    color: orange;
+}
+
+.o:hover {
+    color: blue;
+}
+
+.there:hover {
+    font-size: 100px;
+    color: var(--red);
+    transition: all 500ms;
+    /* font-size-adjust: 500px; */
+
+}
+
+.hide {
+    display: none;
+    margin: 25px;
+}
+
+.myDIV {
+    color: lawngreen;
+    margin: 50px 50px;
+    padding: 50px;
+}
+
+.myDIV:hover {
+    color: var(--blue);
+    transition: all 500ms;
+    font-size: 50px;
+}
+
+.myDIV:hover+.hide {
+    display: block;
+    font-size: 20px;
+    color: var(--white);
+    transition: all 500ms;
+    /* color: red; */
+}

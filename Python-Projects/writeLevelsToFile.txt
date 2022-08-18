@@ -1,0 +1,11 @@
+    # Method: Write levelsList to levelsFile (override the existing file)
+    def writeLevelsToFile(self):
+        # Open the file in a way that will override the existing file (if it already exists)
+        pass
+        # Use a loop to iterate over levelsList item by item
+        pass
+            # This code is inside the loop:
+            # Convert everything in the item to a string and then add \n to it - before writing it to the file
+            pass
+        # Close the file
+        pass
