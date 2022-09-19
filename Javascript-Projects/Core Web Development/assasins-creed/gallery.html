@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assassins Creed III</title>
+    <link rel="stylesheet" href="assasin.css">
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@1,700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Gallery</h1>
+    <nav class="headNav">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h2>Some In-Game Snippets</h2>
+    <div class="in-game-snippets" style="text-align: center;">
+        <img style="border: 5px solid silver; border-radius:15px; align-self: center;" id="slide" src="" alt=""
+            width="600" height="600">
+    </div>
+
+    <h2>Game Trailer</h2>
+    <div class="video-trailer">
+        <video src="./photos/Assassin's Creed 3  - E3 Official Trailer [UK].mp4" controls height="600px" width="100%">
+        </video>
+    </div>
+
+    <script>
+        let i = 0;
+        let images = [];
+        let time = 2000;
+
+        images[0] = "./photos/323133.jpg";
+        images[1] = "./photos/707926.jpg";
+        images[2] = "./photos/2355676.webp";
+        images[3] = "./photos/above teee.webp";
+        images[4] = "./photos/assassins-creed-3-switch-nintendo-direct-rumors.jpg";
+        images[5] = "./photos/collage.jpg";
+        images[6] = "./photos/dUemGK.webp";
+        images[7] = "./photos/running.jpg";
+        images[8] = "./photos/wallpapersden.com_assassin-s-creed-3-4k_3840x2160.jpg";
+        images[9] = "./photos/wp3464185.jpg";
+
+        function changeImg() {
+            document.getElementById("slide").src = images[i];
+
+            if (i < images.length - 1) {
+                i++;
+            }
+            else {
+                i = 0;
+            }
+
+            setTimeout("changeImg()", time)
+        }
+
+        window.onload = changeImg;
+
+    </script>
+</body>
+
+<footer>
+    <p>
+        Created by <cursive> Andre Williams ™</cursive>.
+    </p>
+    <p>
+        All rights reserved Ⓒ 2022
+    </p>
+    <nav>
+        <ul class="footNav">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</html>

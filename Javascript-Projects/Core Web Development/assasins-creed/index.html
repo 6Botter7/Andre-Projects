@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assassins Creed III</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@1,700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: 'GFS Neohellenic', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-image: url("./photos/maze.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #land-btn {
+            display: flex;
+            height: 40px;
+            width: 160px;
+            border-radius: 10px;
+            background-color: gray;
+            color: white;
+            font-family: 'GFS Neohellenic', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-size: large;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        button#land-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
+        }
+
+        button#land-btn:hover {
+            background-color: rgba(7, 7, 7, 0.511);
+
+            z-index: 1;
+            transition: all 0.5s;
+            border: 1px solid;
+
+            transform: scale(1.5);
+        }
+
+        button#land-btn:hover::before {
+            transform: rotate(-45deg);
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
+        }
+
+        button#land-btn:hover::after {
+            transform: rotate(45deg);
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
+        }
+
+        button#land-btn::before {
+            content: '';
+            position: absolute;
+            height: 40px;
+            width: 160px;
+            z-index: 1;
+            transition: all 0.5s;
+            border: 1px solid rgba(194, 13, 13, 0.388);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        button#land-btn::after {
+            content: '';
+            position: absolute;
+            height: 40px;
+            width: 160px;
+            z-index: 1;
+            transition: all 0.5s;
+            border: 1px solid rgba(177, 23, 23, 0.441);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="main-header">Assassins Creed III</h1>
+
+    <h3>Are you ready, to work in the dark, to serve the Light?</h3>
+    <!-- <button id="land-btn"><a href="home.html">I AM</a></button> -->
+    <a href="home.html"><button id="land-btn">I AM</button></a>
+
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

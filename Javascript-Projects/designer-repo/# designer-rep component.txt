@@ -1,0 +1,60 @@
+# designer-rep component
+
+This is a component that shows a list of repository items that will be used as part of screen design.
+You will need a property that manages what kind of list you are showing
+
+1. grid
+2. list
+
+When this property changes you need to change the content of the component to match the state.
+
+## Repositories
+Each repository will have two html files, one for each state as listed above.  
+Repositories will be saved in the path relative to the application root folder.
+
+/templates/designer-repo/
+
+Lets say that we have a text repo. 
+That means you have two files.
+
+/templates/designer-repo/text-list.html
+/templates/designer-repo/text-grid.html
+
+Note that the file name is build out of two parts.
+The first part is the repo name, in this case "text".
+The second part is the display type (list or grid) and then finally the extention ".html"
+
+The component must have a data-attribute defining what repo is being used.
+For example: data-repo="text".
+The component then needs to see what display state is being shown (grid or list) and then fetch the appropriate html document.
+
+So if the display state is "grid" and the data-repo is set to "text" you need to fetch the html file "/templates/designer-repo/text-grid.html"
+
+## Updating to changes
+The data-repo value can change at runtime.
+When this happens you need to remove the old HTML and replace it with the new HTML based on the repo that was defined in the data-repo attribute.
+
+You will have to implement the attributeChangedCallback for this
+https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks
+
+## UL LI
+The repository html will only contain li elements and it's content.
+
+<li>...</li>
+<li>...</li>
+
+The component will have a UL and this ul is the target.
+You will set the innerHTML of the UL to the html content that you downloaded for the repo.
+
+## Styles
+
+Note that the css for the UL will change based on the display state.
+If you are showing a grid, the ul needs to use the grid layout class that you have defined in the component.
+If you are showing a list, the ul needs to use the list layout class that you have defined in the compoennt.
+
+## Not to implement yet
+You will notice there is a filter text box at the top, we will be using the process api to do that.
+Add the UI but not the features just yet.
+At the bottom right hand corner is a resize icon. That will need to be set using an absolute position.
+We will also implement this using the process api.
+So add the UI for this but we will do the implementation of this after the fact.

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #board {
+            display: flexbox;
+            border: 3px solid silver;
+        }
+
+        img {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <canvas id="board" width="400" height="400">
+        Canvas is not supported on this browser
+        <img src="../class-activities/chess-pieces/black-pawn2.jpg" height="30px" width="30px" alt="">
+    </canvas>
+
+    <div id="piece-div">
+        <img id="black" src="../class-activities/chess-pieces/black-pawn2.jpg" height="30px" width="30px" alt="">
+        <img id="white" src="../class-activities/chess-pieces/white-pawn.png" height="30px" width="30px" alt="">
+        <img id="black" src="../class-activities/chess-pieces/black-pawn2.jpg" height="30px" width="30px" alt="">
+        <img id="white" src="../class-activities/chess-pieces/white-pawn.png" height="30px" width="30px" alt="">
+        <img id="black" src="../class-activities/chess-pieces/black-pawn2.jpg" height="30px" width="30px" alt="">
+        <img id="white" src="../class-activities/chess-pieces/white-pawn.png" height="30px" width="30px" alt="">
+        <img id="black" src="../class-activities/chess-pieces/black-pawn2.jpg" height="30px" width="30px" alt="">
+        <img id="white" src="../class-activities/chess-pieces/white-pawn.png" height="30px" width="30px" alt="">
+        <img id="black" src="../class-activities/chess-pieces/black-pawn2.jpg" height="30px" width="30px" alt="">
+        <img id="white" src="../class-activities/chess-pieces/white-pawn.png" height="30px" width="30px" alt="">
+        <img id="black" src="../class-activities/chess-pieces/black-pawn2.jpg" height="30px" width="30px" alt="">
+        <img id="white" src="../class-activities/chess-pieces/white-pawn.png" height="30px" width="30px" alt="">
+
+
+    </div>
+
+    <img id="black" src="../class-activities/chess-pieces/black-pawn2.jpg" height="30px" width="30px" alt="">
+    <img id="white" src="../class-activities/chess-pieces/white-pawn.png" height="30px" width="30px" alt="">
+
+
+
+
+    <script>
+        "use strict";
+        // Get the canvas context
+        var chessCanvas = document.getElementById("board");
+        var chessContext = chessCanvas.getContext("2d");
+        var imgPawn = new Image();
+        // var whitePawn = src("../class-activities/chess-pieces/white-pawn.png");
+        // var blackPawn = src("../class-activities/chess-pieces/black-pawn2.jpg");
+        var blackPawn = document.getElementById("black");
+        var whitePawn = document.getElementById("white");
+
+
+        // Draw the chess board
+        function drawBoard() {
+            chessContext.clearRect(0, 0, 400, 400);
+            chessContext.fillStyle = "red";
+            chessContext.strokeStyle = "red";
+            // Draw the alternating squares
+            for (var x = 0; x < 8; x++) {
+                for (var y = 0; y < 8; y++) {
+
+                    if ((x + y) % 2) {
+                        chessContext.fillRect(50 * x, 50 * y, 50, 50);
+                    }
+                }
+            }
+            // Add a border around the entire board
+            chessContext.strokeRect(0, 0, 600, 600);
+
+
+        }
+
+        drawBoard();
+
+
+        function loadImages() {
+            imgPawn.src = "Core Web Development/class-activities/chess-pieces/black-pawn2.jpg";
+            context.drawImage(imgPawn, 0, 0, 50, 100);
+            chessContext.drawImage(p.image,
+                (75 - p.width) / 2 + (75 * p.x),
+                73 - p.height + (75 * p.y),
+                p.width,
+                p.height);
+        }
+
+        function allowDrop() {
+            // Add the event listeners
+            // blackPawn = document.getElementById("black");
+            blackPawn.addEventListener('dragover', dragOver, false);
+
+            // whitePawn = document.getElementById("black");
+            whitePawn.addEventListener('dragover', dragOver, false);
+
+            var squares = document.querySelectorAll('.bblack');
+            var i = 0;
+            while (i < squares.length) {
+                var s = squares[i++];
+                // Add the event listeners
+                s.addEventListener('dragover', dragOver, false);
+                s.addEventListener('drop', drop, false);
+            }
+            // Wire up the source events on all of the images
+            i = 0;
+            var pieces = document.querySelectorAll('img');
+            while (i < pieces.length) {
+                var p = pieces[i++];
+                p.addEventListener('dragstart', dragStart, false);
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
